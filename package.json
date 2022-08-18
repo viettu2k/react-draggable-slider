@@ -2,7 +2,7 @@
   "name": "react-draggable-slider",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/viettu2k/react-draggable-slider",
+  "homepage": "https://viettu2k.github.io/react-draggable-slider",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
