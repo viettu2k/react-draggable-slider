@@ -1,23 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Slider from "react-draggable-slider";
+import { projectList } from "./dummy";
 
 function App() {
+  const sliderSettings = {
+    data: projectList,
+    speed: 3000,
+    bgColor: "#070707",
+    showButton: true,
+    buttonText: "View projects",
+    buttonHref: "https://www.example.com",
+    buttonTarget: "_self",
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Slider sliderSettings={sliderSettings} />
     </div>
   );
 }
